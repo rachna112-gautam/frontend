@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
@@ -12,12 +16,12 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="navbar">
+      <div class="top-navbar">
         <div id="toggle" class="hamburger">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
 
-        <!-- <div class="top-menu">
+        <div class="top-menu">
           <div class="navbar-logo">
             <img src="Cogent Logo SVG-03.svg" alt="Cogent" />
           </div>
@@ -37,7 +41,7 @@
             </ul>
             <div class="user-info">
               <div class="user-name">
-                <p>Rachna Gautam</p>
+                <p>Username</p>
                 <small>Clerk</small>
               </div>
               <div class="user-img">
@@ -47,7 +51,7 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
 
       <div class="side-navbar">
@@ -236,14 +240,448 @@
           </ul>
         </div>
       </div>
+    </div>
 
-      <div id="refund-modal" class="refund-acc">
-        <i id="r-btn" class="fa fa-times-thin fa-2x" aria-hidden="true"></i>
-        <p>Refunded Rs.367.00 successfully.</p>
+    <div class="account-container">
+      <div class="top-header">
+        <a href="#"
+          >Home <span><i class="fa fa-chevron-right"></i> </span
+        ></a>
+        <a href="#">Holding Accounts</a>
+      </div>
+      <h5>Holding Accounts</h5>
+
+      <div class="search-bar">
+        <div class="search-icon">
+          <i class="fa fa-search"></i>
+          <input
+            class="search ml-3 w-25"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+
+        <div class="dd-container">
+          <ul>
+            <li>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Account ID
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Owner ID
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Account Type
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Status
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="table-con">
+          <div class="header">
+            <h5>All Holding Accounts</h5>
+            <div class="left">
+              <div>
+                <span>Filter By</span>
+                <button class="btn add-btn">Add New Account</button>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <table>
+              <thead>
+                <th>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="" /></label>
+                  </div>
+                </th>
+                <th>Account ID</th>
+                <th>Owner ID</th>
+                <th>Account Name</th>
+                <th>Account Type</th>
+                <th>Current Balance</th>
+                <th>Status on</th>
+                <th>Status</th>
+                <th style="text-align: center">Actions</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a id="dots"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        <ul id="list-content">
+                          <li>Refund Account</li>
+                          <li id="Deposit">Deposit Account</li>
+                          <li>Account summary</li>
+                          <li>View Account</li>
+                          <li>Remove</li>
+                        </ul>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a href="#" class="dots"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" /></label>
+                    </div>
+                  </td>
+                  <td><a href="#">CR-10-GrpA-012</a></td>
+                  <td>LH-001-08</td>
+                  <td><a href="#">State vs Sawer</a></td>
+                  <td>Holding Account</td>
+                  <td>100.00</td>
+                  <td>01-09-2020 09:10 AM</td>
+                  <td>
+                    <span>Active</span>
+                  </td>
+                  <td>
+                    <div>
+                      <a href="#"
+                        ><i class="fa fa-pencil" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-trash" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div id="refund-modal" class="refund-acc">
+      <i id="r-btn" class="fa fa-times-thin fa-2x" aria-hidden="true"></i>
+      <p>Refunded Rs.367.00 successfully.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

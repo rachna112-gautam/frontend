@@ -1,7 +1,5 @@
 const navbar = document.getElementById("toggle");
 const el = document.getElementsByTagName("i")[0];
-const refund_modal = document.getElementById("refund-modal");
-const btn = document.getElementById("r-btn");
 
 // SideBar toogle
 navbar.onclick = function () {
@@ -9,12 +7,7 @@ navbar.onclick = function () {
 };
 navbar.addEventListener("click", () => {
   $("#list-2").toggleClass("show");
-});
-
-// refund_modal
-
-btn.addEventListener("click", () => {
-  refund_modal.classList.add("close-refund-acc");
+  $(".account-container").toggleClass("index-toggle");
 });
 
 $("body #link-1").hover(function () {
@@ -74,4 +67,17 @@ $("body #link-14").hover(function () {
 });
 $("body #link-15").hover(function () {
   $("body #link-15").toggleClass("changeColor"); // 2
+});
+
+$("#dots").click(() => {
+  $("#list-content").toggle();
+});
+
+$("#Deposit").click(() => {
+  $(".refund-acc").toggle();
+});
+// refund_modal
+
+$("#r-btn").click(() => {
+  $(".refund-acc").toggle();
 });
