@@ -82,12 +82,11 @@ $("#r-btn").click(() => {
   $(".refund-acc").toggle();
 });
 
-
-$("#Ref").click(() =>{
+$("#Ref").click(() => {
   $("#myModal2").modal();
 });
 
-$("#Deposit").click(() =>{
+$("#Deposit").click(() => {
   $("#myModal3").modal();
 });
 

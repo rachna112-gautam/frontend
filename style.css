@@ -177,7 +177,7 @@ p {
   box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   border-left: 6px solid #4ad295;
-  z-index: 1;
+
   animation-name: animatetop;
   animation-duration: 0.4s;
   transition: all 0.3s ease;
@@ -432,7 +432,6 @@ a ul li:hover {
   background-color: #e8e8e8;
 }
 
-
 /**modal**/
 .modal-dialog {
   position: fixed;
@@ -440,7 +439,7 @@ a ul li:hover {
   right: 0px;
   height: 100%;
 }
-.modal-content{
+.modal-content {
   height: 100vh;
 }
 .modal-content {
