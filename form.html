@@ -11,7 +11,7 @@
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Cogent</title>
   </head>
   <body>
@@ -35,8 +35,9 @@
                   ><i class="fa fa-calendar" aria-hidden="true"></i
                 ></a>
               </li>
-              <li>
+              <li class="position-relative">
                 <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+                <div class="position-absolute red-dot"></div>
               </li>
             </ul>
             <div class="user-info">
@@ -250,14 +251,19 @@
         <a href="#">New Holding Accounts</a>
       </div>
       <h5>New Holding Accounts</h5>
-      <hr>
-      <br>
+      <hr />
+      <br />
 
       <form>
         <div class="form-row">
           <div class="form-group col-md-2">
             <label for="inputEmail4">Account ID</label>
-            <input type="search" class="form-control" id="fa-search" placeholder="Search">
+            <input
+              type="search"
+              class="form-control"
+              id="fa-search"
+              placeholder="Search"
+            />
           </div>
           <div class="form-group col-md-2">
             <label for="user-name">Account Name</label>
@@ -276,70 +282,92 @@
 
           <div class="form-group col-md-4">
             <label for="accLoc">Account Location</label>
-            <input type="text" class="form-control" id="accLoc" placeholder="New Jersy">
+            <input
+              type="text"
+              class="form-control"
+              id="accLoc"
+              placeholder="New Jersy"
+            />
           </div>
-
         </div>
 
         <div class="form-row">
-          
-            <div class="form-group col-md-2">
-              <label for="minBalance">Minimum Balance</label>
-              <input type="number" class="form-control" id="minBalance" placeholder="0.00">
-            </div>
+          <div class="form-group col-md-2">
+            <label for="minBalance">Minimum Balance</label>
+            <input
+              type="number"
+              class="form-control"
+              id="minBalance"
+              placeholder="0.00"
+            />
+          </div>
 
-            <div class="form-group col-md-2">
-              <label for="CurrBalance">Current Balance</label>
-              <input type="number" class="form-control" id="CurrBalance" placeholder="0.00">
-            </div>
+          <div class="form-group col-md-2">
+            <label for="CurrBalance">Current Balance</label>
+            <input
+              type="number"
+              class="form-control"
+              id="CurrBalance"
+              placeholder="0.00"
+            />
+          </div>
 
-            <div class="form-group col-md-4">
-              <label for="status">Status</label>
-              <select id="status" class="form-control">
-                <option selected>Active</option>
-                <option>Closed</option>
-                <option>...</option>
-              </select>
-            </div>
+          <div class="form-group col-md-4">
+            <label for="status">Status</label>
+            <select id="status" class="form-control">
+              <option selected>Active</option>
+              <option>Closed</option>
+              <option>...</option>
+            </select>
+          </div>
 
-            <div class="form-group col-md-4">
-              <label for="statusOn">Status On</label>
-              <input type="date" class="form-control" id="statusOn" placeholder="0.00">
-            </div>
+          <div class="form-group col-md-4">
+            <label for="statusOn">Status On</label>
+            <input
+              type="date"
+              class="form-control"
+              id="statusOn"
+              placeholder="0.00"
+            />
+          </div>
         </div>
 
         <div class="auth-user">
-          <br>
+          <br />
           <h5>Authorised Users</h5>
-          <hr>
+          <hr />
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-3">
             <label for="ownerId">Owner ID</label>
-            <input type="search" class="form-control" id="ownerId" placeholder="HAI-SCM">
+            <input
+              type="search"
+              class="form-control"
+              id="ownerId"
+              placeholder="HAI-SCM"
+            />
           </div>
 
           <div class="form-group col-md-3">
             <label for="OwnerName">Owner Name</label>
-            <input type="search" class="form-control" id="OwnerName" placeholder="Chester, Sylvester">
+            <input
+              type="search"
+              class="form-control"
+              id="OwnerName"
+              placeholder="Chester, Sylvester"
+            />
           </div>
         </div>
 
-
-       
         <div class="form-group">
-          <br>
+          <br />
           <button type="submit" class="btn btn-primary">Cancel</button>
           <button type="submit" class="btn btn-secondary">Save</button>
-
         </div>
-
-        
       </form>
     </div>
 
-   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

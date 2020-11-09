@@ -177,7 +177,6 @@ p {
   box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   border-left: 6px solid #4ad295;
-
   animation-name: animatetop;
   animation-duration: 0.4s;
   transition: all 0.3s ease;
@@ -444,4 +443,13 @@ a ul li:hover {
 }
 .modal-content {
   height: 100%;
+}
+
+.red-dot {
+  top: 24%;
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  border-radius: 50%;
+  right: 34%;
 }
