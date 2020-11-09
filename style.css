@@ -431,3 +431,18 @@ a ul li {
 a ul li:hover {
   background-color: #e8e8e8;
 }
+
+
+/**modal**/
+.modal-dialog {
+  position: fixed;
+  margin: auto;
+  right: 0px;
+  height: 100%;
+}
+.modal-content{
+  height: 100vh;
+}
+.modal-content {
+  height: 100%;
+}
