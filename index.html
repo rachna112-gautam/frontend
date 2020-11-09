@@ -403,7 +403,7 @@
                       <a id="dots"
                         ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                         <ul id="list-content">
-                          <li>Refund Account</li>
+                          <li id="Ref">Refund Account</li>
                           <li id="Deposit">Deposit Account</li>
                           <li>Account summary</li>
                           <li>View Account</li>
@@ -685,6 +685,134 @@
       <i id="r-btn" class="fa fa-times-thin fa-2x" aria-hidden="true"></i>
       <p>Refunded Rs.367.00 successfully.</p>
     </div>
+    
+    
+     <!-- Modal 3-->
+    <div class="container demo">
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Deposit to Holding Account</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <label for="account_id">Account ID</label> 
+            <div class="input-group md-form form-sm form-2 pl-0">
+              <input class="form-control" id="account_id" type="text" placeholder="HA1SC-001M" aria-label="Search">
+              <div class="input-group-append">
+                <span class="input-group-text lime lighten-2" id="basic-text1"><i class="fas fa-search text-grey"
+                  aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <form>
+              <div class="form-group mt-1">
+                <label for="amount_name">Account Name</label>
+                <input type="text" class="form-control" id="account_name" placeholder="HA1SC-001M">
+              </div>
+              <div class="form-group">
+                <label for="account_type">Account Type</label>
+                <input type="text" class="form-control" id="account_type" placeholder="Holding Act">
+              </div>
+              <div class="row ">
+                <div class="col col-md-6">
+                  <div class="row>
+                    <label for="payer_id">Payer ID</label>
+                  </div>
+                  <div class="row form-group input-group mt-2" style="margin-left: 0.1em;">
+                    <input class="form-control amber-border" id="payer_id" type="text" placeholder="HA1-SCM" aria-label="Search">
+                    <div class="input-group-append">
+                      <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fas fa-search"
+                        aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Chester,r Sylvester">
+                    <div class="form-check pt-2">
+                      <input class="form-check-input" type="checkbox" value="" id="organization">
+                      <label class="form-check-label" for="organization">Organization</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="deposit_amt">Deposit Amount</label>
+                    <input type="text" class="form-control" id="deposit_amt" placeholder="500.00">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="account_bal">Account Balance</label>
+                    <input type="text" class="form-control" id="account_bal" placeholder="325.00">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger">Cancel</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal 2-->
+    <div class="container demo">
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Refund from Holding Account</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <p>A Payable will be created to refund the specified amount from holding account HA1SC-001M.</p>
+            <form>
+              <div class="form-group">
+                <label for="amount_to_refund">Amount to Refund</label>
+                <input type="text" class="form-control" id="amount_to_refund" placeholder="0.00">
+              </div>
+              <div class="form-group">
+                <label for="amount_remains_on_deposit">Amount Remains on Deposit</label>
+                <input type="text" class="form-control" id="amount_remains_on_deposit" placeholder="325.00">
+              </div>
+              <div class="row ">
+                <div class="col col-md-6">
+                  <div class="row>
+                    <label for="refund_to">Refund to</label>
+                  </div>
+                  <div class="row form-group input-group mt-2" style="margin-left: 0.1em;">
+                    <input class="form-control amber-border" id="refund_to" type="text" placeholder="HA1-SCM" aria-label="Search">
+                    <div class="input-group-append">
+                      <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fas fa-search"
+                        aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Chester,r Sylvester">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger">Cancel</button>
+            <button id="ref-popup" type="button" class="btn btn-primary">Refund</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
