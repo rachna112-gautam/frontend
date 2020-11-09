@@ -73,11 +73,24 @@ $("#dots").click(() => {
   $("#list-content").toggle();
 });
 
-$("#Deposit").click(() => {
-  $(".refund-acc").toggle();
-});
+// $("#Deposit").click(() => {
+//   $(".refund-acc").toggle();
+// });
 // refund_modal
 
 $("#r-btn").click(() => {
+  $(".refund-acc").toggle();
+});
+
+
+$("#Ref").click(() =>{
+  $("#myModal2").modal();
+});
+
+$("#Deposit").click(() =>{
+  $("#myModal3").modal();
+});
+
+$("#ref-popup").click(() => {
   $(".refund-acc").toggle();
 });
